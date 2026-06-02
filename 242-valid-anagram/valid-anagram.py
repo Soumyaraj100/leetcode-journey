@@ -5,9 +5,8 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        for i in range(len(s)):
-                if len(s)!=len(t):
-                    return False
-                elif t.count(s[i]) != s.count(s[i]):
-                    return False
+        alphabets = "qwertyuiopasdfghjklzxcvbnm"
+        for a in alphabets:
+            if s.count(a)!=t.count(a):
+                return False
         return True
