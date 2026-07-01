@@ -5,10 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        num = 1
-        while True:
-            if num not in arr:
-                k -= 1
-                if k == 0:
-                    return num
-            num += 1 
+        for i in arr:
+            if i<=k:
+                k+=1
+        return k
