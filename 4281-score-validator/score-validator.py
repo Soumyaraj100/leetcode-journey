@@ -15,4 +15,4 @@ class Solution(object):
                 s+=1
             else:
                 s+=int(x)
-        return [s,min(c,10)]
+        return [s,c]
