@@ -12,7 +12,7 @@ class Solution(object):
         if sorted(s) != sorted(goal):
             return False
         diff = []
-        for i in range(len(s)):
+        for i in xrange(len(s)):
             if s[i] != goal[i]:
                 diff.append(i)
         if len(diff) == 2:
